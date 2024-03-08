@@ -1,0 +1,56 @@
+<% layout("/layouts/boilerplate.ejs")%>
+<body>
+    <h1 style="text-align: center">Consult with Doctor</h1>
+    <form method="post" action="/appoinment" novalidate class="needs-validation">
+    
+     <div class="br">
+     <div class="row">
+         <div class="col-8 offset-2">
+     <div class="mb-3">
+         <label for="name" class="form-label">name: </label>
+         <input type="text" class="form-control" name="patient[name]" placeholder="enter name here" required>
+         <div class="invalid-feedback">
+           Please enter name here.
+         </div>  
+         
+         </div>
+       <div class="mb-3">
+         <label for="gender" class="form-label">gender: </label>
+         <input type="text" class="form-control" name="patient[gender]" placeholder="enter gender here" required>
+         <div class="invalid-feedback">
+           Please enter gender here.
+         </div>  
+       </div>
+       <div class="mb-3">
+         <label for="age" class="form-label">age: </label>
+         <input  placeholder="enter age here" name="patient[age]" class="form-control"   required>
+         <div class="invalid-feedback">
+           Please enter age here.
+         </div>  
+         
+         </div>
+         <div class="mb-3">
+             <label for="speciality" class="form-label">speciality: </label>
+             <select name="patient[speciality]" class="form-select" required>
+                 
+                 <option value="Alergy">Alergy</option>
+                 <option value="Dietician">Dietician</option>
+                 <option value="Psychiatrist">Psychiatrist</option>
+                 <option value="Dentist">Dentist</option>
+                 <option value="Healthcheckup">Healthcheckup</option>
+                 <option value="General Doctor">General Doctor</option>
+                 <option value="casmetologist">casmetologist</option>
+                 <option value="Neurologist">Neurologist</option>
+             </select>
+             </div>
+    
+     <button class="btn btn-dark mb-3">submit </button>
+    </form >
+ </div>
+ </div>
+ </div>
+ <form method="get" action="/logout">
+  <button class="btn btn-large offset-2 btn-dark">LogOut</button>
+ </form>
+
+</body>

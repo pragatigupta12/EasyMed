@@ -1,0 +1,72 @@
+/* /* https://campaign.lifesonmanipal.com/campaign/lifes-on/video-consultation/?utm_source=google&utm_medium=ppc&utm_network=search&utm_campaign=North_Video_Consultation_New&utm_adgroup=&utm_ad=&keyword=appoint%20doctor%20online&device=c&gad_source=1&gclid=CjwKCAiAloavBhBOEiwAbtAJO58k0Lh8exY0sEc7ONRomUr7fjlkOF1sKELrq80EPBLvazwWjcZnmxoCNNgQAvD_BwE */
+body{
+    background-color: rgb(232, 246, 253);
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 300;
+    font-style: bold ;
+      
+}
+
+.allitem{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.logo{
+margin-top: 10px;
+margin-left: 10px;
+height: 6rem ;
+width: 6rem ;
+background-image: url("https://media.licdn.com/dms/image/D4D03AQEDUJM5oN8VYg/profile-displayphoto-shrink_800_800/0/1674471123458?e=2147483647&v=beta&t=8jJ6Xa_nQRF6QEVmyIqqp28Txjf3bisLyQc2LtTllIc");
+background-size: cover;
+}
+.home{
+   color: darkblue;
+   font-size: larger ;
+   justify-content:flex-start; 
+    flex-direction: column ;
+  margin-left: 10rem ;
+  margin-top: 7rem ;
+  line-height: 1rem 
+}
+
+.circle{
+    border: 2px solid white;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin-top: 2.5rem;
+    margin-left: 10rem;
+    background-image: url("https://www.myhealthspace.in/assets/img/consult-min.jpg");
+    background-size: cover;
+}
+.line{
+    margin-top: 2px;
+    width: 100%;
+    border: 1.2px solid black;
+}
+
+.call{
+    margin-top: 2px;
+    background-color: rgb(45, 192, 192) !important;
+    border-radius: 5rem;
+}
+
+@media ( min-width:700px) and (max-width:1000px){
+    .circle{
+        height: 15rem;
+        width: 15rem;
+    } 
+    .home{
+        font-size: large;
+    }  
+   
+}
+
+@media(max-width:700){
+    .btn-lg{
+        width: 100%;
+     } 
+}
+
+
